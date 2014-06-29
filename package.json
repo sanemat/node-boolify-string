@@ -2,8 +2,8 @@
   "name": "boolify-string",
   "description": "The best module ever.",
   "version": "0.0.0",
-  "homepage": "https://github.com/sanemat/boolify-string",
-  "bugs": "https://github.com/sanemat/boolify-string/issues",
+  "homepage": "https://github.com/sanemat/node-boolify-string",
+  "bugs": "https://github.com/sanemat/node-boolify-string/issues",
   "license": "MIT",
   "main": "lib/boolify-string.js",
   "author": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanemat/boolify-string"
+    "url": "https://github.com/sanemat/node-boolify-string"
   },
   "keywords": [],
   "dependencies": {},

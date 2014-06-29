@@ -1,4 +1,4 @@
-# boolify-string 
+# boolify-string
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image] [![Coverage Status][coveralls-image]][coveralls-url]
 
 The best module ever.
@@ -41,9 +41,9 @@ Copyright (c) 2014 sanemat. Licensed under the MIT license.
 
 [npm-url]: https://npmjs.org/package/boolify-string
 [npm-image]: https://badge.fury.io/js/boolify-string.svg
-[travis-url]: https://travis-ci.org/sanemat/boolify-string
-[travis-image]: https://travis-ci.org/sanemat/boolify-string.svg?branch=master
-[daviddm-url]: https://david-dm.org/sanemat/boolify-string.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/sanemat/boolify-string
-[coveralls-url]: https://coveralls.io/r/sanemat/boolify-string
-[coveralls-image]: https://coveralls.io/repos/sanemat/boolify-string/badge.png
+[travis-url]: https://travis-ci.org/sanemat/node-boolify-string
+[travis-image]: https://travis-ci.org/sanemat/node-boolify-string.svg?branch=master
+[daviddm-url]: https://david-dm.org/sanemat/node-boolify-string.svg?theme=shields.io
+[daviddm-image]: https://david-dm.org/sanemat/node-boolify-string
+[coveralls-url]: https://coveralls.io/r/sanemat/node-boolify-string
+[coveralls-image]: https://coveralls.io/repos/sanemat/node-boolify-string/badge.png

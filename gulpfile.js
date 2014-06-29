@@ -10,9 +10,14 @@ var paths = {
   source: ['./lib/*.js']
 };
 
+var boolifyString = function(value){
+  return value && value.toLocaleString() === 'true';
+};
+
 gulp.task('lint', function () {
   return gulp.src(paths.lint)
     .pipe(plugins.jshint('.jshintrc'))
+    .pipe(plugins.if(!boolifyString(process.env.CI), plugins.plumber()))
     .pipe(plugins.jscs())
     .pipe(plugins.jshint.reporter('jshint-stylish'));
 });
@@ -22,7 +27,7 @@ gulp.task('istanbul', function (cb) {
     .pipe(plugins.istanbul()) // Covering files
     .on('finish', function () {
       gulp.src(paths.tests)
-        .pipe(plugins.plumber())
+        .pipe(plugins.if(!boolifyString(process.env.CI), plugins.plumber()))
         .pipe(plugins.mocha())
         .pipe(plugins.istanbul.writeReports()) // Creating the reports after tests runned
         .on('finish', function() {

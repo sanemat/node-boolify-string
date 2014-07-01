@@ -3,7 +3,7 @@
 
 Check a string whether truthy or falsy.
 
-# Use case
+## Use case
   Read from environmental variable, e.g. process.env.CI = (TRUE/(empty))
 ```
 if (boolifyString(process.env.CI)){ something_do(); }

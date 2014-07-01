@@ -1,6 +1,6 @@
 {
   "name": "boolify-string",
-  "description": "The best module ever.",
+  "description": "Check a string whether truthy or falsy.",
   "version": "0.0.0",
   "homepage": "https://github.com/sanemat/node-boolify-string",
   "bugs": "https://github.com/sanemat/node-boolify-string/issues",

@@ -1,8 +1,13 @@
 # boolify-string
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image] [![Coverage Status][coveralls-image]][coveralls-url]
 
-The best module ever.
+Check a string whether truthy or falsy.
 
+# Use case
+  Read from environmental variable, e.g. process.env.CI = (TRUE/(empty))
+```
+if (boolifyString(process.env.CI)){ something_do(); }
+```
 
 ## Install
 
@@ -15,22 +20,26 @@ $ npm install --save boolify-string
 
 ```javascript
 var boolifyString = require('boolify-string');
-boolifyString.awesome(); // "awesome"
+
+boolifyString('true');// #=> true
+boolifyString('TRUE');// #=> true
+boolifyString('True');// #=> true
+boolifyString('false');// #=> false
+
+boolifyString('{}');// #=> true
+boolifyString('foo');// #=> true
+boolifyString('');// #=> false
+boolifyString('1');// #=> true
+boolifyString('-1');// #=> true
+boolifyString('0');// #=> false
+boolifyString('[]');// #=> true
+boolifyString('undefined');// #=> false
+boolifyString('null');// #=> false
 ```
-
-## API
-
-_(Coming soon)_
-
 
 ## Contributing
 
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [gulp](http://gulpjs.com/).
-
-
-## Release History
-
-_(Nothing yet)_
 
 
 ## License

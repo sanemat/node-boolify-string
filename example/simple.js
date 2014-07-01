@@ -10,7 +10,21 @@
 
 var boolifyString = require('../boolify-string.js');
 
-boolifyString.awesome(); // "awesome"
+boolifyString('true');// #=> true
+boolifyString('TRUE');// #=> true
+boolifyString('True');// #=> true
+boolifyString('false');// #=> false
+
+boolifyString('{}');// #=> true
+boolifyString('foo');// #=> true
+boolifyString('');// #=> false
+boolifyString('1');// #=> true
+boolifyString('-1');// #=> true
+boolifyString('0');// #=> false
+boolifyString('[]');// #=> true
+boolifyString('undefined');// #=> false
+boolifyString('null');// #=> false
+
 //value type result
 //{} オブジェクト true
 //"hoge" 文字列 true

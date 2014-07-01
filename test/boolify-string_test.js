@@ -32,27 +32,27 @@ describe('boolifyString', function () {
   });
 
   describe('falsy string', function(){
-    it('should be false', function () {
+    it('false should be false', function () {
       assert.equal(boolifyString('false'), false);
     });
-    it('should be false', function () {
+    it('(empty string) should be false', function () {
       assert.equal(boolifyString(''), false);
     });
-    it('should be false', function () {
+    it('0 should be false', function () {
       assert.equal(boolifyString('0'), false);
     });
-    it('should be false', function () {
+    it('undefined should be false', function () {
       assert.equal(boolifyString('undefined'), false);
     });
-    it('should be false', function () {
+    it('null should be false', function () {
       assert.equal(boolifyString('null'), false);
     });
   });
 
-  it('should be true', function(){
+  it('actual true should be true', function(){
     assert.equal(boolifyString(true), true);
   });
-  it('should be false', function(){
+  it('actual false should be false', function(){
     assert.equal(boolifyString(false), false);
   });
 });

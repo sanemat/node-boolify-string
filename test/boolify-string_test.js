@@ -17,4 +17,10 @@ describe('boolifyString', function () {
   it('should be false', function () {
     assert.equal(boolifyString('false'), false);
   });
+  it('should be true', function(){
+    assert.equal(boolifyString(true), true);
+  });
+  it('should be false', function(){
+    assert.equal(boolifyString(false), false);
+  });
 });

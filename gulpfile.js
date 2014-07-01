@@ -29,7 +29,7 @@ gulp.task('istanbul', function (cb) {
     .on('finish', function () {
       gulp.src(paths.tests)
         .pipe(plugins.if(!boolifyString(process.env.CI), plugins.plumber()))
-        .pipe(plugins.mocha())
+        .pipe(plugins.mocha({reporter: 'spec'}))
         .pipe(plugins.istanbul.writeReports()) // Creating the reports after tests runned
         .on('finish', function() {
           process.chdir(__dirname);

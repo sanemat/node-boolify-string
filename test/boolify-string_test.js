@@ -5,8 +5,16 @@ var assert = require('power-assert');
 
 describe('boolifyString', function () {
 
-  it('should be awesome', function () {
-    assert.equal(boolifyString.awesome(), 'awesome');
+  it('should be true', function () {
+    assert.equal(boolifyString('true'), true);
   });
-
+  it('should be true', function () {
+    assert.equal(boolifyString('TRUE'), true);
+  });
+  it('should be true', function () {
+    assert.equal(boolifyString('True'), true);
+  });
+  it('should be false', function () {
+    assert.equal(boolifyString('false'), false);
+  });
 });

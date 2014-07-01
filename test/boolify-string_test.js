@@ -1,12 +1,12 @@
 'use strict';
 
 var boolifyString = require('../lib/boolify-string.js');
-var assert = require('should');
+var assert = require('power-assert');
 
 describe('boolifyString', function () {
 
   it('should be awesome', function () {
-    boolifyString.awesome().should.equal('awesome');
+    assert.equal(boolifyString.awesome(), 'awesome');
   });
 
 });

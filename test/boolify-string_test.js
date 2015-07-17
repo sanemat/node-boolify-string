@@ -49,10 +49,12 @@ describe('boolifyString', function () {
     });
   });
 
-  it('actual true should be true', function(){
-    assert.equal(boolifyString(true), true);
-  });
-  it('actual false should be false', function(){
-    assert.equal(boolifyString(false), false);
+  describe('primitive values', function () {
+    it('true should be true', function(){
+      assert.equal(boolifyString(true), true);
+    });
+    it('false should be false', function(){
+      assert.equal(boolifyString(false), false);
+    });
   });
 });

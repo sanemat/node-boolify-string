@@ -1,7 +1,7 @@
 {
   "name": "boolify-string",
   "description": "Check a string whether truthy or falsy.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "sanemat",
     "email": "o.gata.ken@gmail.com"

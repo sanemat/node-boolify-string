@@ -2,40 +2,39 @@
   "name": "boolify-string",
   "description": "Check a string whether truthy or falsy.",
   "version": "0.1.0",
-  "homepage": "https://github.com/sanemat/node-boolify-string",
-  "bugs": "https://github.com/sanemat/node-boolify-string/issues",
-  "license": "MIT",
-  "main": "lib/boolify-string.js",
   "author": {
     "name": "sanemat",
     "email": "o.gata.ken@gmail.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sanemat/node-boolify-string"
-  },
-  "keywords": [],
+  "bugs": "https://github.com/sanemat/node-boolify-string/issues",
   "dependencies": {},
   "devDependencies": {
-    "coveralls": "^2.10.0",
-    "espower-loader": "^0.7.1",
-    "gulp": "^3.6.2",
-    "gulp-if": "^1.2.1",
-    "gulp-istanbul": "^0.2.0",
-    "gulp-jscs": "^0.4.2",
-    "gulp-jshint": "^1.5.5",
-    "gulp-load-plugins": "^0.5.1",
-    "gulp-mocha": "^0.4.1",
-    "gulp-plumber": "^0.6.2",
-    "intelli-espower-loader": "^0.1.0",
-    "jshint-stylish": "^0.2.0",
-    "power-assert": "^0.7.2"
+    "david": "^6.1.6",
+    "espower-loader": "^0.11.0",
+    "fixpack": "^2.2.0",
+    "intelli-espower-loader": "^0.7.0",
+    "jscs": "^1.13.1",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5",
+    "power-assert": "^0.11.0"
   },
   "directories": {
     "test": "test/"
   },
+  "homepage": "https://github.com/sanemat/node-boolify-string",
+  "keywords": [],
+  "license": "MIT",
+  "main": "lib/boolify-string.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanemat/node-boolify-string"
+  },
   "scripts": {
-    "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "test": "gulp test"
+    "david": "david",
+    "fixpack": "fixpack",
+    "jscs": "jscs lib/boolify-string.js test/boolify-string_test.js example/simple.js",
+    "jshint": "jshint lib/boolify-string.js test/boolify-string_test.js example/simple.js",
+    "test": "mocha --require intelli-espower-loader",
+    "verify": "npm run jscs && npm run jshint && npm run test"
   }
 }

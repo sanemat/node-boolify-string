@@ -4,5 +4,4 @@ node_js:
   - 'iojs'
   - '0.10'
   - '0.12'
-after_script:
-  - npm run coveralls
+script: "npm run verify"

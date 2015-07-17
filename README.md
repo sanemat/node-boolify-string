@@ -6,7 +6,7 @@ Check a string whether truthy or falsy.
 ## Use case
   Read from environment variable, sometimes these are 'True', 'false', '1', '', undefined, etc.
 
-```
+```javascript
 if (boolifyString(process.env.CI)){
   something_do();
 }

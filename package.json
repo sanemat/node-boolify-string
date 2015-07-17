@@ -28,8 +28,8 @@
     "test": "test/"
   },
   "scripts": {
-    "test": "exit 1",
-    "mocha": "mocha --require intelli-espower-loader",
+    "verify": "npm run jscs && npm run jshint && npm run test",
+    "test": "mocha --require intelli-espower-loader",
     "jscs": "jscs lib/boolify-string.js test/boolify-string_test.js example/simple.js",
     "jshint": "jshint lib/boolify-string.js test/boolify-string_test.js example/simple.js"
   }

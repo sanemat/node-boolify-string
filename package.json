@@ -2,19 +2,11 @@
   "name": "boolify-string",
   "description": "Check a string whether truthy or falsy.",
   "version": "0.1.0",
-  "homepage": "https://github.com/sanemat/node-boolify-string",
-  "bugs": "https://github.com/sanemat/node-boolify-string/issues",
-  "license": "MIT",
-  "main": "lib/boolify-string.js",
   "author": {
     "name": "sanemat",
     "email": "o.gata.ken@gmail.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sanemat/node-boolify-string"
-  },
-  "keywords": [],
+  "bugs": "https://github.com/sanemat/node-boolify-string/issues",
   "dependencies": {},
   "devDependencies": {
     "david": "^6.1.6",
@@ -29,12 +21,20 @@
   "directories": {
     "test": "test/"
   },
+  "homepage": "https://github.com/sanemat/node-boolify-string",
+  "keywords": [],
+  "license": "MIT",
+  "main": "lib/boolify-string.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanemat/node-boolify-string"
+  },
   "scripts": {
-    "verify": "npm run jscs && npm run jshint && npm run test",
-    "test": "mocha --require intelli-espower-loader",
+    "david": "david",
+    "fixpack": "fixpack",
     "jscs": "jscs lib/boolify-string.js test/boolify-string_test.js example/simple.js",
     "jshint": "jshint lib/boolify-string.js test/boolify-string_test.js example/simple.js",
-    "david": "david",
-    "fixpack": "fixpack"
+    "test": "mocha --require intelli-espower-loader",
+    "verify": "npm run jscs && npm run jshint && npm run test"
   }
 }

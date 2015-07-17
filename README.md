@@ -39,7 +39,7 @@ boolifyString('[]');// #=> true
 boolifyString('undefined');// #=> false
 boolifyString('null');// #=> false
 
-# primitive values as is
+// primitive values as is
 boolifyString(true);// #=> true
 boolifyString(false);// #=> false
 boolifyString({});// #=> true

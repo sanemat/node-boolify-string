@@ -19,6 +19,7 @@
   "devDependencies": {
     "david": "^6.1.6",
     "espower-loader": "^0.11.0",
+    "fixpack": "^2.2.0",
     "intelli-espower-loader": "^0.7.0",
     "jscs": "^1.13.1",
     "jshint": "^2.8.0",
@@ -33,6 +34,7 @@
     "test": "mocha --require intelli-espower-loader",
     "jscs": "jscs lib/boolify-string.js test/boolify-string_test.js example/simple.js",
     "jshint": "jshint lib/boolify-string.js test/boolify-string_test.js example/simple.js",
-    "david": "david"
+    "david": "david",
+    "fixpack": "fixpack"
   }
 }

@@ -19,12 +19,14 @@
   "devDependencies": {
     "espower-loader": "^0.7.1",
     "intelli-espower-loader": "^0.1.0",
+    "jscs": "^1.13.1",
     "power-assert": "^0.7.2"
   },
   "directories": {
     "test": "test/"
   },
   "scripts": {
-    "test": "exit 1"
+    "test": "exit 1",
+    "jscs": "jscs lib/boolify-string.js test/boolify-string_test.js"
   }
 }

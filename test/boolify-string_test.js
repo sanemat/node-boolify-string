@@ -49,10 +49,33 @@ describe('boolifyString', function () {
     });
   });
 
-  it('actual true should be true', function(){
-    assert.equal(boolifyString(true), true);
-  });
-  it('actual false should be false', function(){
-    assert.equal(boolifyString(false), false);
+  describe('primitive values as is', function () {
+    it('true should be true', function(){
+      assert.equal(boolifyString(true), true);
+    });
+    it('false should be false', function(){
+      assert.equal(boolifyString(false), false);
+    });
+    it('object should be true', function(){
+      assert.equal(boolifyString({}), true);
+    });
+    it('1 should be true', function(){
+      assert.equal(boolifyString(1), true);
+    });
+    it('-1 should be true', function(){
+      assert.equal(boolifyString(-1), true);
+    });
+    it('0 should be false', function(){
+      assert.equal(boolifyString(0), false);
+    });
+    it('array should be true', function(){
+      assert.equal(boolifyString([]), true);
+    });
+    it('undefined should be false', function(){
+      assert.equal(boolifyString(undefined), false);
+    });
+    it('null should be false', function(){
+      assert.equal(boolifyString(null), false);
+    });
   });
 });

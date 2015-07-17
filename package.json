@@ -22,7 +22,11 @@
     "test": "test/"
   },
   "homepage": "https://github.com/sanemat/node-boolify-string",
-  "keywords": [],
+  "keywords": [
+    "string",
+    "environment",
+    "bool"
+  ],
   "license": "MIT",
   "main": "lib/boolify-string.js",
   "repository": {

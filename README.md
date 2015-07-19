@@ -1,5 +1,5 @@
 # boolify-string
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
 Check a string whether truthy or falsy.
 
@@ -63,3 +63,5 @@ Copyright (c) 2014-2015 sanemat. Licensed under the MIT license.
 [travis-image]: https://travis-ci.org/sanemat/node-boolify-string.svg?branch=master
 [daviddm-url]: https://david-dm.org/sanemat/node-boolify-string.svg?theme=shields.io
 [daviddm-image]: https://david-dm.org/sanemat/node-boolify-string
+[appveyor-url]: https://ci.appveyor.com/project/sanemat/node-boolify-string/branch/master
+[appveyor-image]: https://img.shields.io/appveyor/ci/sanemat/node-boolify-string/master.svg?style=flat-square&label=appveyor

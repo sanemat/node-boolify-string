@@ -7,7 +7,9 @@
     "email": "o.gata.ken@gmail.com"
   },
   "bugs": "https://github.com/sanemat/node-boolify-string/issues",
-  "dependencies": {},
+  "dependencies": {
+    "type-detect": "^1.0.0"
+  },
   "devDependencies": {
     "conventional-changelog": "^0.1.0-beta.3",
     "david": "^6.1.6",

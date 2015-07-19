@@ -1,3 +1,17 @@
+<a name="2.0.0"></a>
+# 2.0.0 (2015-07-19)
+
+* Support YAML's specification. e.g. 'y/n', 'on/off'
+    * http://yaml.org/type/bool.html
+    * Breaking change!
+
+
+### Features
+
+* **specification:** support yaml specification ([d4ef6e4](https://github.com/sanemat/node-boolify-string/commit/d4ef6e4))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2015-07-19)
 

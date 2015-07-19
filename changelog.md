@@ -1,3 +1,9 @@
+<a name="2.0.1"></a>
+## 2.0.1 (2015-07-19)
+
+* Use type-detect instead of my implementation
+
+
 <a name="2.0.0"></a>
 # 2.0.0 (2015-07-19)
 

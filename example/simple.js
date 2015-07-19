@@ -37,3 +37,8 @@ boolifyString('null');// #=> false
 //false 真偽値 false
 //undefined undefined false
 //null null false
+
+// http://yaml.org/type/bool.html
+//y|Y|yes|Yes|YES|n|N|no|No|NO
+//|true|True|TRUE|false|False|FALSE
+//|on|On|ON|off|Off|OFF

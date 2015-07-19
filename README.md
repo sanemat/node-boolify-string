@@ -49,6 +49,10 @@ boolifyString(0);// #=> false
 boolifyString([]);// #=> true
 boolifyString(undefined);// #=> false
 boolifyString(null);// #=> false
+
+// string constructor
+boolifyString(new String('true'));// #=> true
+boolifyString(new String('false'));// #=> false
 ```
 
 

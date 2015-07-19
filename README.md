@@ -60,7 +60,6 @@ boolifyString(new String('false'));// #=> false
 // y|Y|yes|Yes|YES|n|N|no|No|NO
 // |true|True|TRUE|false|False|FALSE
 // |on|On|ON|off|Off|OFF
-//
 boolifyString('y');// #=> true
 boolifyString('Y');// #=> true
 boolifyString('yes');// #=> true

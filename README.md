@@ -85,6 +85,11 @@ boolifyString('OFF');// #=> false
 ```
 
 
+## Simular
+
+* [yn](https://github.com/sindresorhus/yn)
+
+
 ## Changelog
 
 [changelog](./changelog.md)

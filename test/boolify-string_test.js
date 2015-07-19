@@ -78,4 +78,15 @@ describe('boolifyString', function () {
       assert.equal(boolifyString(null), false);
     });
   });
+
+  describe('new String("")', function (){
+    it('new String("true") should be true', function(){
+      var target = new String('true'); // jshint ignore:line
+      assert.equal(boolifyString(target), true);
+    });
+    it('new String("false") should be false', function(){
+      var target = new String('false'); // jshint ignore:line
+      assert.equal(boolifyString(target), false);
+    });
+  });
 });

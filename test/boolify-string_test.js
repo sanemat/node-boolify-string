@@ -89,4 +89,72 @@ describe('boolifyString', function () {
       assert.equal(boolifyString(target), false);
     });
   });
+  describe('yaml specification', function (){
+    it('y should be true', function(){
+      assert.equal(boolifyString('y'), true);
+    });
+    it('Y should be true', function(){
+      assert.equal(boolifyString('Y'), true);
+    });
+    it('yes should be true', function(){
+      assert.equal(boolifyString('yes'), true);
+    });
+    it('Yes should be true', function(){
+      assert.equal(boolifyString('Yes'), true);
+    });
+    it('YES should be true', function(){
+      assert.equal(boolifyString('YES'), true);
+    });
+    it('n should be false', function(){
+      assert.equal(boolifyString('n'), false);
+    });
+    it('N should be false', function(){
+      assert.equal(boolifyString('N'), false);
+    });
+    it('no should be false', function(){
+      assert.equal(boolifyString('no'), false);
+    });
+    it('No should be false', function(){
+      assert.equal(boolifyString('No'), false);
+    });
+    it('NO should be false', function(){
+      assert.equal(boolifyString('NO'), false);
+    });
+    it('true should be true', function(){
+      assert.equal(boolifyString('true'), true);
+    });
+    it('True should be true', function(){
+      assert.equal(boolifyString('True'), true);
+    });
+    it('TRUE should be true', function(){
+      assert.equal(boolifyString('TRUE'), true);
+    });
+    it('false should be false', function(){
+      assert.equal(boolifyString('false'), false);
+    });
+    it('False should be false', function(){
+      assert.equal(boolifyString('False'), false);
+    });
+    it('FALSE should be false', function(){
+      assert.equal(boolifyString('FALSE'), false);
+    });
+    it('on should be true', function(){
+      assert.equal(boolifyString('on'), true);
+    });
+    it('On should be true', function(){
+      assert.equal(boolifyString('On'), true);
+    });
+    it('ON should be true', function(){
+      assert.equal(boolifyString('ON'), true);
+    });
+    it('off should be false', function(){
+      assert.equal(boolifyString('off'), false);
+    });
+    it('Off should be false', function(){
+      assert.equal(boolifyString('Off'), false);
+    });
+    it('OFF should be false', function(){
+      assert.equal(boolifyString('OFF'), false);
+    });
+  });
 });

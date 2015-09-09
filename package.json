@@ -24,6 +24,9 @@
   "directories": {
     "test": "test/"
   },
+  "files": [
+    "lib"
+  ],
   "homepage": "https://github.com/sanemat/node-boolify-string",
   "keywords": [
     "bool",

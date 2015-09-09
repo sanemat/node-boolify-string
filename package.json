@@ -11,15 +11,15 @@
     "type-detect": "^1.0.0"
   },
   "devDependencies": {
-    "conventional-changelog": "^0.1.0-beta.3",
-    "david": "^6.1.6",
-    "espower-loader": "^0.11.0",
+    "conventional-changelog": "^0.4.3",
+    "espower-loader": "^1.0.0",
     "fixpack": "^2.2.0",
-    "intelli-espower-loader": "^0.7.0",
-    "jscs": "^1.13.1",
+    "intelli-espower-loader": "^1.0.0",
+    "jscs": "^2.1.1",
     "jshint": "^2.8.0",
     "mocha": "^2.2.5",
-    "power-assert": "^0.11.0"
+    "npm-check-updates": "^2.2.1",
+    "power-assert": "^1.0.0"
   },
   "directories": {
     "test": "test/"
@@ -46,10 +46,10 @@
   },
   "scripts": {
     "changelog": "conventional-changelog -i changelog.md --overwrite --preset angular",
-    "david": "david",
     "fixpack": "fixpack",
     "jscs": "jscs lib/boolify-string.js test/boolify-string_test.js example/simple.js",
     "jshint": "jshint lib/boolify-string.js test/boolify-string_test.js example/simple.js",
+    "ncu": "ncu -u",
     "test": "mocha --require intelli-espower-loader",
     "verify": "npm run jscs && npm run jshint && npm run test"
   }
